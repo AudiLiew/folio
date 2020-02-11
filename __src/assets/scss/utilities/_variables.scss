@@ -105,11 +105,11 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$bodyBg:        $blackAndBlue;
-$bodyText:      $clayGray;
+$bodyBg:        $gray-100;
+$bodyText:      $blackAndBlue;
 
-$headerBg:      darken($bodyBg, 2%); //$darkBlue;
-$headerShadow:  $gray-900;
+$headerBg:      $white; //$darkBlue;
+$headerShadow:  $gray-400;
 
 $mainNavLink:   $bodyText;
 $mainNavHoverBg:  lighten($headerBg, 10%);
