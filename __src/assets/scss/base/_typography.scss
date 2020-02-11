@@ -5,9 +5,8 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: $bodyType;
   line-height: 1.85rem;
-  font-weight: 300;
   font-size: 1.1rem;
   background-color: $bodyBg;
   color: $bodyText;

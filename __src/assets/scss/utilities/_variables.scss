@@ -1,8 +1,10 @@
 //_____________________________________________________
 // Names
 //_____________________________________________________
-$mainHeader: "mainHeader";
+$mainHeader:  "mainHeader";
 
+$bodyType:    'Open Sans', sans-serif;
+$titleType:   'Carter One', cursive;
 //_____________________________________________________
 // Sizes 
 //_____________________________________________________
@@ -11,9 +13,9 @@ $headerSizes: (
   "widescreen": 23rem
 );
 //$maxWidth: 890px;
-$contentWidth-normal: 710px; //680px;
-$contentWidth-widescreen: 710px;
-$contentWidth-fullhd: 780px;
+$contentWidth-normal: 880px; //680px;
+//$contentWidth-widescreen: 710px;
+$contentWidth-fullhd: 1080px;
 
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 32px;
