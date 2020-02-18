@@ -9,6 +9,11 @@
     column-gap: 10%;
     row-gap: 50px;
   }
+
+  @include desktop {
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+  }
 }
 
 .work {

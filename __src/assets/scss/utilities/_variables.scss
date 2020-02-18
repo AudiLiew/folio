@@ -81,6 +81,7 @@ $teal:      #20c997;
 $cyan:      #17a2b8;
 $maskRed:   rgba(#FFB7B7, .5);
 $mask:      rgba($black, .2);
+$mask:      $maskRed;
 
 $colors: ();
 $colors: map-merge((
