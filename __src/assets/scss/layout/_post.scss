@@ -20,3 +20,46 @@
   position: relative;
   background-color: $pageColour;
 }
+
+$postHeader: 'post-header';
+.#{$postHeader} {
+  
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+
+    &--noIntro {
+      display: block;
+
+      & .#{$postHeader}__title {
+        width: 100%;
+      }
+    }
+  } // desktop
+
+  &__title {
+    margin-bottom: 2rem;
+
+    @include desktop {
+      width: 46%;
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0;
+    }
+  } // title
+
+  &__intro {
+    @include desktop {
+      width: 46%;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -6,17 +6,17 @@ layout: default
 </div>
 <div class="post-wrap">
   <div class="container">
-    <header>
-      <h1>{{ title }}</h1>
-      <div class="post-meta">
-        <p class="post-meta__date">
-          Published: <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
-          {# <time datetime="{% if mod_date %}{{ mod_date }}{% else  %}{{ date }}{% endif %}">{% if mod_date %}{{ mod_date | dateDisplay }}{% else  %}{{ date | dateDisplay }}{% endif %}</time> #}
-        </p>
-        {% if mod_date %}
-        <p class="meta__dateUpdated">Updated: <time datetime="{{ mod_date }}">{{ mod_date | dateDisplay }}</time></p>        
+    <header class="post-header{% if not projectIntro %} post-header--noIntro{% endif %}">
+      <div class="post-header__title">
+        <h1>{{ title }}</h1>
+        {% if projectType %}
+        <p>- {{ projectType }}</p>
         {% endif %}
-      
+      </div>
+      <div class="post-header__intro">
+      {% if projectIntro %}
+        <p>{{ projectIntro }}</p>        
+      {% endif %}
       </div>
     </header>
     <div class="post-content">
