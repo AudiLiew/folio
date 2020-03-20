@@ -1,3 +1,26 @@
+.hero {
+  position: relative;
+  height: 45vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include desktop {
+    height: 65vh;
+    min-height: 550px;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+.post-wrap {
+  position: relative;
+  background-color: $pageColour;
+}
+
 .work-wrap {
   
   @include tablet {
